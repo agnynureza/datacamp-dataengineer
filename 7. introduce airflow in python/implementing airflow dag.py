@@ -50,3 +50,17 @@ dag = DAG('update_dataflows', default_args=default_args, schedule_interval='30 1
 Set the start date of the DAG to November 1, 2019.
 Configure the retry_delay to 20 minutes. You will learn more about the timedelta object in Chapter 3. For now, you just need to know it expects an integer value.
 Use the cron syntax to configure a schedule of every Wednesday at 12:30pm.
+
+""" airflow sensors """
+sensor = operator yang menunggu sesuatu menjadi true
+
+""" Airflow executor"""
+
+""" Defining SLA """
+default_args={
+    'email': ['airflowalerts@datacamp.com'],
+    'email_on_failure': True,
+    'email_on_retry': False,
+    'email_on_success': True, 
+    ...}
+WithinDAGsfromtheEmailOperator
